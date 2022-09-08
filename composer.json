@@ -1,0 +1,16 @@
+{
+    "name": "dsblack/dserror",
+    "description": "show description the errrors responses",
+    "autoload": {
+        "psr-4": {
+            "Dsblack\\Dserror\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "blackbyte",
+            "email": "blackbyted.developer@gmail.com"
+        }
+    ],
+    "require": {}
+}
