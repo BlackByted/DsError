@@ -1,6 +1,6 @@
 {
     "name": "dsblack/dserror",
-    "description": "show description the errrors responses",
+    "description": "show description errrors responses",
     "autoload": {
         "psr-4": {
             "Dsblack\\Dserror\\": "src/"
