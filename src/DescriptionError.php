@@ -7,10 +7,13 @@ class DescriptionError{
     protected $lenguage='en';
     protected $gateway;
     protected $error;
-    protected $validlenguages=['en','es','de','fr'];
-    protected $validgetway=['PayPal','Stripe'];
+    protected $validlenguages=[];
+    protected $validgetway=[];
+
     public function __construct()
     {
+        $this->validlenguages=include(__DIR__."/validslenguage.php");
+        $this->validgetway=$this->scan();
     }
 
     protected function errorMSG($data)
@@ -61,5 +64,11 @@ class DescriptionError{
         $data=include(__DIR__."./Dictionaries/$this->gateway/$this->lenguage.php");
         
         return $data[$this->error] ?? $data['*']; 
+    }
+
+    protected function scan(){
+        $data=scandir(__DIR__."./Dictionaries",SCANDIR_SORT_NONE);
+        $data=array_splice($data,2,(count($data)-2));
+        return $data;
     }
 }
