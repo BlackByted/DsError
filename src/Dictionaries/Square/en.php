@@ -1,6 +1,7 @@
 <?php
 
 return [
+    '*'=>'no problem description found.',
     'INTERNAL_SERVER_ERROR'=>'A general server error occurred.',
     'UNAUTHORIZED'=>'A general authorization error occurred.',
     'ACCESS_TOKEN_EXPIRED'=>'The provided access token has expired.',

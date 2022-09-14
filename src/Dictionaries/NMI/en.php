@@ -1,6 +1,7 @@
 <?php
 
 return [
+    '*'=>'no problem description found.',
     '1001'=>'The specified card in the request has expired',
     '1002'=>'The specified card in the request is not yet effective',
     '1003'=>'The specified card scheme in the request is not supported',

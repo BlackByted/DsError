@@ -1,6 +1,7 @@
 <?php
 
 return [
+    '*'=>'no problem description found.',
     '2000'=>'The customer’s bank is unwilling to accept the transaction. The customer will need to contact their bank for more details regarding this generic decline.',
     '2001'=>'The account did not have sufficient funds to cover the transaction amount at the time of the transaction – subsequent attempts at a later date may be successful.',
     '2002'=>'The attempted transaction exceeds the withdrawal limit of the account. The customer will need to contact their bank to change the account limits or use a different payment method.',
