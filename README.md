@@ -1,5 +1,5 @@
 # DsError
-show description the errrors responses
+show description of the error responses, for the use of webcomers who use online payment and do not have an error interpreter, this to facilitate the user's resolution of the problem
 
 Supported APIs
 
